@@ -1,6 +1,7 @@
 const colors = ["green", "red", "rgba(133,122,200)", "#f15025"];
 const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
+const idni = document.getElementById("idn");
 
 btn.addEventListener("click", function () {
   const randomNumber = getRandomNumber();
@@ -8,6 +9,7 @@ btn.addEventListener("click", function () {
 
   document.body.style.backgroundColor = colors[randomNumber];
   color.textContent = colors[randomNumber];
+  idni.style.color=colors[randomNumber];
 });
 
 function getRandomNumber() {
