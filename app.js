@@ -10,6 +10,7 @@ btn.addEventListener("click", function () {
   document.body.style.backgroundColor = colors[randomNumber];
   color.textContent = colors[randomNumber];
   idni.style.color=colors[randomNumber];
+idni.textContent = colors[randomNumber];
 });
 
 function getRandomNumber() {
